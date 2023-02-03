@@ -1,0 +1,139 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="StudMaster.master.cs" Inherits="student_StudMaster" %>
+
+<!DOCTYPE html>
+
+<html  xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+
+<!-- font-awesome icons CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons CSS -->
+
+ <!-- side nav css file -->
+ <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css'/>
+ <!-- side nav css file -->
+ 
+ <!-- js-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+
+<!--webfonts-->
+<link href="http://localhost:5745/fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+<!--//webfonts--> 
+
+<!-- Metis Menu -->
+<script src="js/metisMenu.min.js"></script>
+<script src="js/custom.js"></script>
+<link href="css/custom.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/mdb.css" rel="stylesheet" />
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="cbp-spmenu-push">
+    <form id="form1" runat="server">
+          <div class="main-content">
+	<div class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+		<!--left-fixed -navigation-->
+		<aside class="sidebar-left">
+      <nav class="navbar navbar-inverse">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <h1><a class="navbar-brand" href="index.html"><span class="fa fa-area-chart"></span>Student<span class="dashboard_text"></span></a></h1>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="sidebar-menu">
+              <li class="header">MAIN NAVIGATION</li>
+              <li class="treeview">
+                <a href="#">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                </a>
+              </li>
+			  <li class="treeview">
+                <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>Student</span>
+                <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  <li id="fillform" runat="server"><a href="StudForm.aspx"><i class="fa fa-angle-right"></i>Fill Form</a></li>
+                  <li id="Edit" runat="server"><a href="EditForm.aspx"><i class="fa fa-angle-right"></i>Edit Form</a></li>
+                    <li id="View" runat="server"><a href="Studinfo.aspx"><i class="fa fa-angle-right"></i>View Form</a></li>
+                    <li id="ViewWork" runat="server"><a href="ViewWorksheet.aspx"><i class="fa fa-angle-right"></i>View Worksheet</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </nav>
+    </aside>
+	</div>
+		<!--left-fixed -navigation-->
+		
+		<!-- header-starts -->
+		<div class="sticky-header header-section ">
+			<div class="header-right">
+              <i class="fa fa-sign-out"></i><asp:Button ID="Button1" runat="server" Text="LOGOUT" class="btn btn-elegant btn-sm" OnClick="Button1_Click"/>
+			</div>	
+		</div>
+		<!-- //header-ends -->
+		<!-- main content start-->
+	<!-- side nav js -->
+	<script src='js/SidebarNav.min.js' type='text/javascript'></script>
+	<script>
+	    $('.sidebar-menu').SidebarNav()
+    </script>
+	<!-- //side nav js -->
+	
+	<!-- Classie --><!-- for toggle left push menu script -->
+		<script src="js/classie.js"></script>
+		<script>
+		    var menuLeft = document.getElementById('cbp-spmenu-s1'),
+				showLeftPush = document.getElementById('showLeftPush'),
+				body = document.body;
+
+		    showLeftPush.onclick = function () {
+		        classie.toggle(this, 'active');
+		        classie.toggle(body, 'cbp-spmenu-push-toright');
+		        classie.toggle(menuLeft, 'cbp-spmenu-open');
+		        disableOther('showLeftPush');
+		    };
+
+		    function disableOther(button) {
+		        if (button !== 'showLeftPush') {
+		            classie.toggle(showLeftPush, 'disabled');
+		        }
+		    }
+		</script>
+        </div>
+	   <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <script src="js/jquery.nicescroll.js"></script>
+	<script src="js/scripts.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+   <script src="js/bootstrap.js"> </script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/mdb.js"></script>
+        <script src="js/mdb.min.js"></script>
+        <script src="js/popper.min.js"></script>
+    </form>
+</body>
+</html>

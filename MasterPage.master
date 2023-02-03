@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <script defer src="/static/fontawesome/fontawesome-all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+    <link href="css/StyleSheet2.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="n/StyleSheet.css" rel="stylesheet" />    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet" />
+    <link href="resources/style.css" rel="stylesheet" />
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet" />
+       <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="contaner m-2">
+        <div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <div class="fl_right">
+      <ul class="nospace inline pushright">
+        <li><i class="fa fa-phone"></i> 91-(0253)2571376</li>
+        <li><i class="fa fa-envelope-o"></i>www.kthmcollege.ac.in</li>
+      </ul>
+    </div>
+       </div>
+           </div>               
+     <div class="header align-content-lg-end">   
+        
+    <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-5 text-center">
+            <div class="left-top-heading">
+                <p>
+                    एम.व्ही.पी. समाजाचे
+                </p> 
+                <h4>
+					<strong>के. टी. एच. एम. महाविद्यालय</strong>
+                </h4>
+                <h5><b>विद्यार्थी कल्याण मंडळ</b>
+                    </h5>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 text-center">
+            <a href='http://www.kthmcollege.ac.in/'>
+                <img class="" src='http://www.kthmcollege.ac.in/images/logo.png' alt=" K.T.H.M. COLLEGE, Nashik" /></a></div>
+        <div class="col-lg-5 col-md-5 col-sm-5 text-center">
+            <div class="right-top-heading">
+                <p>
+                    MVP SAMAJ'S</p>
+                <h4>
+                    <strong>K.T.H.M. COLLEGE, Nashik</strong></h4>
+                <h5>
+                    <b>board of Student Walfare</b></h5>
+            </div>
+        </div>
+    </div>
+</div>
+      
+  <nav id="mainav" role="navigation" class="hoc clear bg-dark"> 
+    <!-- ################################################################################################ -->
+    <ul class="clear">
+      <li><a href="Default.aspx">Home</a></li>
+      <li><a class="drop" href="#">Student</a>
+        <ul>
+          <li><a href="SLogin.aspx">Student Login</a></li>
+        </ul>
+      </li>
+      <li><a class="drop" href="#">Department</a>
+        <ul>
+          <li><a href="Department/DLogin.aspx"> Department Login</a></li>
+          <li><a class="drop" href="#"> View Department</a>
+            <ul>
+              <li><a href="http://www.kthmcollege.ac.in/arts">Arts</a></li>
+              <li><a href="http://www.kthmcollege.ac.in/commerce">Commerce</a></li>
+              <li><a href="http://www.kthmcollege.ac.in/science">Science</a></li>
+                
+            </ul>
+        </ul>
+      </li>
+      <li><a href="Commitee.aspx">commitee</a></li>
+      <li><a href="http://www.kthmcollege.ac.in/campus">campus</a></li>
+      <li><a href="ContactUs.aspx">Contat Us</a></li>
+      
+    </ul>
+    <!-- ################################################################################################ -->
+  </nav>
+        <div>              
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </div>
+          <div class="wrapper row5">  
+  <div id="copyright" class="footer-copyright py-5 "> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2018- All Rights Reserved - <a href="http:\\www.kthmcollege.ac.in">www.kthmcollege.ac.in</a></p>
+       
+    <!-- ################################################################################################ -->            </div>           </div>  
+          <!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<!-- IE9 Placeholder Support -->
+<script src="layout/scripts/jquery.placeholder.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+        <script src="resources/calender.js"></script>
+    </form>
+</body>
+</html>
